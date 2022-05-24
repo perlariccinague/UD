@@ -1,0 +1,114 @@
+@import "variables";
+
+.exponat, .mod_mae_event_filter {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mod_mae_event_filter {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    border: 2px solid $gelb2;
+    background: transparent;
+    display: inline-block;
+    padding: 8px 25px;
+    font-weight: 600;
+    border-radius: 22px;
+    font-size: 18px;
+    align-self: center;
+    a {
+      color: $blau1;
+      text-decoration: none;
+      }
+    &.active {
+      color: white;
+      background-color: $gelb;
+      border: 2px solid;
+      a {
+        color: white;
+      }
+    }
+
+  }
+}
+
+.exponate .filter {
+  font-size: 20px;
+  color: $blau1;
+  font-weight: 600;
+}
+
+.text_image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text_image .image_right {
+  width: 48%;
+  img {
+    margin: 13px auto;
+  }
+}
+
+.text_image .text {
+  width: 48%;
+}
+
+.text_image .text, .text_image .image_right {
+  color: gray;
+  font-size: 14px;
+  h3 {
+    border-bottom: 1px solid blue;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+  }
+  .text-left {
+
+  }
+  p {
+    background-color: aliceblue;
+    margin: 5px auto;
+    strong {
+      font-weight: 700;
+    }
+    img {
+      width: 25px;
+      position: absolute;
+      left: 48%;
+    }
+  }
+}
+
+
+.th {
+  background: white;
+  color: black;
+  font-size: 12px;
+}
+
+tr {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 1025px) {
+  .text_image .text, .text_image .image_right {
+    width: 100%;
+  }
+
+  .mod_mae_event_filter ul{
+    display: inline-block;
+    li {
+      margin: 5px auto;
+    }
+  }
+
+  .text_image .text p img,{
+    left: 81%;
+  }
+
+}

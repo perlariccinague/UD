@@ -1,0 +1,44 @@
+@import "variables";
+
+.mod_eventlist {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .event.layout_list {
+    width: 30%;
+    background-color: $blau2;
+    padding: 10px;
+    .time {
+      color: $grau;
+    }
+    h2 {
+      a {
+        color: white;
+        text-decoration: none;
+        line-height: 1.1em;
+        text-transform: uppercase;
+        font-size: 23px;
+        transition: color 250ms;
+        &:hover {
+          color: $gelb;
+        }
+      }
+    }
+    .location {
+      color: white;
+    }
+    .ce_text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mod_eventlist .event.layout_list {
+    width: 100%;
+    margin: 5px auto;
+  }
+}

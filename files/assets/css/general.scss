@@ -1,0 +1,60 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+@import "slider";
+@import "akkordeon";
+@import "menu";
+@import "form";
+@import "details";
+@import "reference";
+
+body {
+ line-height: 1.4em;
+  font-size: 20px;
+  font-family:"Montserrat Alternates", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main .inside {
+  padding-bottom: calc(4 * 1em);
+  margin-bottom: 4vw;
+}
+
+.banner-image {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  padding-top: calc(1*1em);
+}
+
+.main, .main2, .exponate {
+  position: relative;
+  z-index: 2;
+}
+
+.exposition, .main_new {
+  position: relative;
+  z-index: 3;
+}
+
+.main1, .space {
+  position: relative;
+  z-index: 4;
+}
+
+.main1_new, .slider_image, .exposition_new {
+  position: relative;
+  z-index: 5;
+}
+
+.reference {
+  z-index: 6;
+  position: relative;
+}

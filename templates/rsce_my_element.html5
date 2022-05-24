@@ -1,0 +1,14 @@
+<section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
+    <div class="exponat">
+        <h1><?= $this->name ?></h1>
+        <div><?= $this->text  ?></div>
+        <div class="image">
+            
+            <img src="{{file::<?= $this->titleImage ?>}}">
+        </div>
+        <div class="image1">
+            <?= $this->header ?>
+        </div>
+    </div>
+    <?php echo $this->text ?>
+</section>
