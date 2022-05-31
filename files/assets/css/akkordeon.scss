@@ -2,7 +2,7 @@
 .ce_accordionStart  {
   width: 90%;
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .toggler {
@@ -21,4 +21,8 @@
 .ce_accordionStart .description {
   color: $grau;
   font-size: 18px;
+}
+
+.ce_accordionStart .ce_image {
+  margin-top: 15px;
 }

@@ -24,17 +24,15 @@
       top: 25px;
       font-size: 70px;
       text-decoration: none;
-      right: 53vw;
+      right: 5vw;
     }
   }
   .mod_navigation {
     width: 90%;
-    max-width: 1200px;
     margin: 80px auto;
     ul {
       li {
         padding: 10px 0;
-        width: 65%;
         a, strong {
           color: white;
           text-decoration: none;
@@ -43,7 +41,8 @@
           transition: color 250ms;
         }
         &:not(:last-child) {
-          border-bottom: 1px solid white;
+          border-bottom: 3px white;
+          border-bottom-style: dotted;
         }
         &.active strong {
           color: $gelb;
@@ -60,5 +59,15 @@
 .mobile_menu .mod_navigation ul .submenu > ul {
   padding: 0 29px;
   display: block;
+  li a {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  #wrapper {
+    overflow-x: hidden;
+  }
+
 }
 

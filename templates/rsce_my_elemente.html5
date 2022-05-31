@@ -1,96 +1,125 @@
 <section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
-    <div class="exponat">
-        <div class="text_image">
-           <div class="text">
-               <h3>Besonderheiten, Details, technische Angaben</h3>
-               <div class="text-left">
-                   <p><strong>Maßstab</strong> <?= $this->scale  ?></p>
-                   <p><strong>Höhe</strong> <?= $this->height  ?></p>
-                   <p><strong>Nettogrundfläche</strong> <?= $this->space  ?></p>
-                   <p><strong>Gewicht</strong> <?= $this->weight  ?></p>
-               </div>
-               <h3>Besonderheiten, Details, technische Angaben</h3>
-               <div class="text-left">
-                   <p><strong>Rigging</strong> <?= $this->rigging->Rigging ?>
-                   <?php if($this->rigging): ?>
-                       <img src="/files/assets/layout/icon-cheked.svg">
-                   <?php else: ?>
-                       <img src="/files/assets/layout/checkbox(1).svg">
-                   <?php endif; ?>
-                   </p>
-                   <p><strong> Prüfstatik</strong> <?= $this->static ?>
-                       <?php if($this->static): ?>
-                           <img src="/files/assets/layout/icon-cheked.svg">
-                       <?php else: ?>
-                           <img src="/files/assets/layout/checkbox(1).svg">
-                       <?php endif; ?>
-                   </p>
-                   <p><strong>Hängepunkte</strong> <?= $this->points  ?></p>
-                   <p><strong>Aufbauzeit</strong> <?= $this->time  ?></p>
-                   <p><strong>Abbauzeit</strong> <?= $this->timeNew  ?></p>
-                   <p><strong>Aufbauteam</strong> <?= $this->team  ?></p>
-                   <p><strong>Hilfskräfte zum Ent-/Beladen</strong> <?= $this->helper  ?></p>
-                   <p><strong>Hilfskräfte zum Auf-/Abbau</strong> <?= $this->helperNew  ?></p>
-                   <p><strong>Sattelzug</strong> <?= $this->forklift  ?>
-                       <?php if($this->forklift): ?>
-                           <img src="/files/assets/layout/icon-cheked.svg">
-                       <?php else: ?>
-                           <img src="/files/assets/layout/checkbox(1).svg">
-                       <?php endif; ?>
-                   </p>
-                   <p><strong>Gabelstapler</strong> <?= $this->truck  ?>
-                       <?php if($this->truck): ?>
-                           <img src="/files/assets/layout/icon-cheked.svg">
-                       <?php else: ?>
-                           <img src="/files/assets/layout/checkbox(1).svg">
-                       <?php endif; ?>
-                   </p>
-                   <p><strong>Gabelverlängerung für <br> Gabelstapler (mind. 2,0 m)</strong> <?= $this->truckNew  ?>
-                       <?php if($this->truckNew): ?>
-                           <img src="/files/assets/layout/icon-cheked.svg">
-                       <?php else: ?>
-                           <img src="/files/assets/layout/checkbox(1).svg">
-                       <?php endif; ?>
-                   </p>
-                   <p><strong>Hubsteiger oder Lift</strong> <?= $this->lift  ?>
-                       <?php if($this->lift): ?>
-                           <img src="/files/assets/layout/icon-cheked.svg">
-                       <?php else: ?>
-                           <img src="/files/assets/layout/checkbox(1).svg">
-                       <?php endif; ?>
-                   </p>
-                   <p><strong>Strom Lampen 16 A Schuko, <br>220/230 V 50/60 Hz</strong> <?= $this->power  ?></p>
-                   <p><strong>Strom Hazer 16 A Schuko,<br>220/230 V 50/60 Hz</strong> <?= $this->powerNew  ?></p>
-                   <?= $this->rigging->Rigging ?>
-               </div>
-               <h3>Optional</h3>
-               <div class="text-left">
-                   <p><?= $this->text  ?></p>
-               </div>
-               <h3>Anmerkung/Hinweise</h3>
-               <div class="text-left">
-                   <p><?= $this->text1  ?></p>
-               </div>
-               <h3>Transportkisten/Cases</h3>
-               <div class="text-left">
-                   <p><?= $this->text2  ?></p>
-               </div>
-           </div>
-            <div class="image_right">
-                <div class="image">
-                    <img src="{{file::<?= $this->titleImage ?>}}">
-                    <img src="{{file::<?= $this->titleImage1 ?>}}">
-                </div>
-                <div class="image1">
-                    <img src="{{file::<?= $this->header ?>}}">
-                    <img src="{{file::<?= $this->header1 ?>}}">
-                </div>
-                <h3>Aufbauvariante</h3>
-                <img src="{{file::<?= $this->titleImage2 ?>}}">
 
-            </div>
-        </div>
-
-    </div>
    
 </section>
+
+<section class="ce_accordionStart ce_accordion block">
+    <div class="toggler ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0"><span><?= $this->headline  ?> </span>
+        </div>
+    <div class="accordion ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" style="" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+        <div class="exponat">
+            <div class="text_image">
+                <div class="text">
+                    <h3>Besonderheiten, Details, technische Angaben</h3>
+                    <div class="text-left">
+                        <p><strong>Maßstab</strong> <?= $this->scale  ?></p>
+                        <p><strong>Höhe</strong> <?= $this->height  ?></p>
+                        <p><strong>Nettogrundfläche</strong> <?= $this->space  ?></p>
+                        <p><strong>Gewicht</strong> <?= $this->weight  ?></p>
+                    </div>
+                    <h3>Besonderheiten, Details, technische Angaben</h3>
+                    <div class="text-left">
+                        <p><strong>Rigging</strong> <?= $this->rigging->Rigging ?>
+                            <?php if($this->rigging): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong> Prüfstatik</strong> <?= $this->static ?>
+                            <?php if($this->static): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong>Hängepunkte</strong> <?= $this->points  ?></p>
+                        <p><strong>Aufbauzeit</strong> <?= $this->time  ?></p>
+                        <p><strong>Abbauzeit</strong> <?= $this->timeNew  ?></p>
+                        <p><strong>Aufbauteam</strong> <?= $this->team  ?></p>
+                        <p><strong>Hilfskräfte zum Ent-/Beladen</strong> <?= $this->helper  ?></p>
+                        <p><strong>Hilfskräfte zum Auf-/Abbau</strong> <?= $this->helperNew  ?></p>
+                        <p><strong>Sattelzug</strong> <?= $this->forklift  ?>
+                            <?php if($this->forklift): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong>Gabelstapler</strong> <?= $this->truck  ?>
+                            <?php if($this->truck): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong>Gabelverlängerung für <br> Gabelstapler (mind. 2,0 m)</strong> <?= $this->truckNew  ?>
+                            <?php if($this->truckNew): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong>Hubsteiger oder Lift</strong> <?= $this->lift  ?>
+                            <?php if($this->lift): ?>
+                                <img src="/files/assets/layout/icon-cheked.svg">
+                            <?php else: ?>
+                                <img src="/files/assets/layout/checkbox(1).svg">
+                            <?php endif; ?>
+                        </p>
+                        <p><strong>Strom Lampen 16 A Schuko, <br>220/230 V 50/60 Hz</strong> <?= $this->power  ?></p>
+                        <p><strong>Strom Hazer 16 A Schuko,<br>220/230 V 50/60 Hz</strong> <?= $this->powerNew  ?></p>
+                        <?= $this->rigging->Rigging ?>
+                    </div>
+                    <h3>Optional</h3>
+                    <div class="text-left">
+                        <p><?= $this->text  ?></p>
+                    </div>
+                    <h3>Anmerkung/Hinweise</h3>
+                    <div class="text-left">
+                        <p><?= $this->text1  ?></p>
+                    </div>
+                    <h3>Transportkisten/Cases</h3>
+                    <div class="text-left">
+                        <p><?= $this->text2  ?></p>
+                    </div>
+                </div>
+                <div class="image_right">
+                    <div class="image">
+                       <!-- <img src="{{file::<?= $this->titleImage ?>}}">-->
+                        <div class="ce_sliderStart block ">
+                            <div class="content-slider" data-config="4000,800,0,1">
+                                <div class="slider-wrapper">
+                                    <?php foreach ($this->images_hoch as $imageId): ?>
+                                        <?php if ($image = $this->getImageObject($imageId, $this->size)): ?>
+                                            <?php $this->insert('picture_default', $image->picture) ?>
+                                        <?php endif ?>
+                                    <?php endforeach ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h3>Aufbauvariante</h3>
+                      <div class="image">
+                          <div class="breit ce_sliderStart block ">
+                             <div class="content-slider" data-config="4000,800,0,1">
+                               <div class="slider-wrapper">
+                                  <?php foreach ($this->images as $imageId1): ?>
+                                    <?php if ($image = $this->getImageObject($imageId1, $this->size)): ?>
+                                        <?php $this->insert('picture_default', $image->picture) ?>
+                                    <?php endif ?>
+                                  <?php endforeach ?>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+

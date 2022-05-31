@@ -36,6 +36,45 @@
   }
 }
 
+.mod_eventreader {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1000px;
+  .event.layout_full {
+    margin: 30px auto;
+    h1 {
+      text-align: center;
+      font-size: 31px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.back {
+  a {
+    color: #f5a906;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 4px;
+      background-color: #f5a906;
+      bottom: -4px;
+      left: 0;
+      transition: width 250ms;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .mod_eventlist .event.layout_list {
     width: 100%;

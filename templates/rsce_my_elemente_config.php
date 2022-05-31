@@ -11,19 +11,15 @@ return array(
         'type' => 'none',
     ),
     'fields' => array(
-        'name' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
-        ),
-        'titleImage' => array(
-            'label' => array('Titelbild', 'Beschreibung...'),
-            'eval' => array('filesOnly' => true),
-            'inputType' => 'fileTree'
-        ),
-        'header' => array(
-            'label' => array('Headerbild', 'Beschreibung...'),
-            'eval' => array('filesOnly' => true),
-            'inputType' => 'fileTree'
+        'images_hoch' => array(
+            'label' => array('Bilder Hoch', ''),
+            'inputType' => 'fileTree',
+            'eval' => array(
+                'multiple' => true,
+                'fieldType' => 'checkbox',
+                'filesOnly' => true,
+                'extensions' => 'jpg,jpeg,png,gif,svg',
+            ),
         ),
         'scale' => array(
             'label' => array('Maßstab', 'Beschreibung...'),
@@ -40,20 +36,6 @@ return array(
         'weight' => array(
             'label' => array('Gewicht', 'Beschreibung...'),
             'inputType' => 'text',
-        ),
-        'name1' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
-        ),
-        'titleImage1' => array(
-            'label' => array('Titelbild', 'Beschreibung...'),
-            'eval' => array('filesOnly' => true),
-            'inputType' => 'fileTree'
-        ),
-        'header1' => array(
-            'label' => array('Headerbild', 'Beschreibung...'),
-            'eval' => array('filesOnly' => true),
-            'inputType' => 'fileTree'
         ),
         'points' => array(
             'label' => array('Hängepunkte', 'Beschreibung...'),
@@ -87,43 +69,21 @@ return array(
             'label' => array('Strom Hazer 16 A Schuko, 220/230 V 50/60 Hz', 'Beschreibung...'),
             'inputType' => 'text',
         ),
-        'name2' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
-        ),
         'text' => array(
-            'label' => array('Text', 'Beschreibung...'),
+            'label' => array('Optional', 'Beschreibung...'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
-        ),
-        'name3' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
         ),
         'text1' => array(
-            'label' => array('Text', 'Beschreibung...'),
+            'label' => array('Anmerkung/Hinweise', 'Beschreibung...'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
-        ),
-        'name4' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
         ),
         'text2' => array(
-            'label' => array('Text', 'Beschreibung...'),
+            'label' => array('Transportkisten/Cases', 'Beschreibung...'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
         ),
-        'name5' => array(
-            'label' => array('Name', 'Beschreibung...'),
-            'inputType' => 'text',
-        ),
-        'titleImage2' => array(
-            'label' => array('Titelbild', 'Beschreibung...'),
-            'eval' => array('filesOnly' => true),
-            'inputType' => 'fileTree'
-        ),
-
         'rigging' => array(
             'inputType' => 'checkbox',
             'options' => array(
@@ -160,5 +120,16 @@ return array(
                 '1' => 'Hubsteiger oder Lift'
             )
         ),
+        'images' => array(
+            'label' => array('Bilder', ''),
+            'inputType' => 'fileTree',
+            'eval' => array(
+                'multiple' => true,
+                'fieldType' => 'checkbox',
+                'filesOnly' => true,
+                'extensions' => 'jpg,jpeg,png,gif,svg',
+            ),
+        ),
+
     ),
 );

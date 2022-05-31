@@ -34,12 +34,12 @@ ul {
   padding-top: calc(1*1em);
 }
 
-.main, .main2, .exponate {
+.main, .main2, .exponate, .contain_exposition {
   position: relative;
   z-index: 2;
 }
 
-.exposition, .main_new {
+.exposition, .main_new, .main2_exponate {
   position: relative;
   z-index: 3;
 }
@@ -54,7 +54,12 @@ ul {
   z-index: 5;
 }
 
-.reference {
+.infos {
+  position: relative;
   z-index: 6;
+}
+
+.reference {
+  z-index: 7;
   position: relative;
 }

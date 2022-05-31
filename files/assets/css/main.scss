@@ -21,7 +21,7 @@
   bottom: 0;
   width: 100%;
   padding: 20px;
-  height: 330px;
+  height: 300px;
   p {
    font-size: 16px;
     max-width: 1000px;
@@ -48,7 +48,7 @@
 .main1_new {
   transform: translateY(-290px) translateX(-25%);
   margin-top: -175px;
-  padding-bottom: 81px;
+  padding-bottom: 19px;
   min-height: 1260px
 }
 
@@ -74,10 +74,10 @@
 .main2 {
   background: white;
   height: auto;
-  transform: translateY(-175px) translateX(-25%);
+  transform: translateY(-145px) translateX(-25%);
   padding-bottom: 200px;
   min-height: 1500px;
-  border-radius: 116%/173% 167% 0 0;
+  border-radius: 97%/112% 113% 0 0;
 }
 
 .text_main2 {
@@ -324,21 +324,11 @@
   }
 }
 
-/*.reference .ce_image {
-  text-align: center;
-  overflow: visible;
-  img {
-    width: 250px;
-    transform: translateY(-50%);
-
-  }
-}*/
-
 .reference_text {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: -400px;
+  margin-top: -452px;
 
   h3 {
     color: white;
@@ -355,13 +345,13 @@
 }
 
 .exponate {
-  border-radius: 380%/173% 167% 0 0;
-  transform: translateY(-150px) translateX(-25%);
+  border-radius: 106%/112% 113% 0 0;
+  transform: translateY(-145px) translateX(-25%);
   width: 200vw;
   background: white;
   color: $grau;
   height: auto;
-  padding-bottom: 390px;
+  padding-bottom: 300px;
   h2 {
     text-align: center;
     font-weight: 500;
@@ -423,6 +413,33 @@
   }
 }
 
+.infos {
+  border-radius: 238%/173% 167% 0 0;
+  transform: translateY(-447px) translateX(-25%);
+  width: 200vw;
+  background: white;
+  min-height: 1260px;
+}
+
+.contain_exposition {
+  background: white;
+  height: auto;
+  transform: translateY(-140px) translateX(-25%);
+  padding-bottom: 200px;
+  min-height: 1500px;
+  border-radius: 216%/112% 113% 0 0;
+  width: 200vw;
+}
+
+.main2_exponate {
+  background: white;
+  transform: translateY(-440px) translateX(-25%);
+  padding-bottom: 200px;
+  border-radius: 262%/112% 113% 0 0;
+  width: 200vw;
+  height: auto;
+}
+
 @media screen and (max-width: 1025px) {
   .mod_mobile_menu {
     display: block;
@@ -446,26 +463,33 @@
     transform: translateX(-50%);
     height: auto;
     line-height: 1.35em;
+    h2 {
+      font-size: 19px;
+    }
     p {
       font-size: 14px;
+      width: 90%;
     }
   }
-  .main, .space, .erwartung, .investition, .exposition, .main2, .main1,
-  .main_new, .erwartung_new, .exponate, .main1_new, .exposition_new {
+  .main, .space, .erwartung, .investition, .exposition, .main2, .main1, .contain_exposition,
+  .main_new, .erwartung_new, .exponate, .main1_new, .exposition_new, .infos, .main2_exponate {
     border-radius: 0;
     transform: translateY(0%) translateX(0%);
     width: 100%;
   }
 
-  .main, .erwartung, .investition, .main_new, .erwartung_new, .exponate,
-  .main1, .main1_new {
+  .main, .erwartung, .investition, .main_new, .erwartung_new,
+  .exponate, .main1, .main1_new {
     height: auto;
   }
   .main .text_main, .investition .text_main, .main2 .text_main2,
-  .main_new .text_main{
+  .main_new .text_main, .contain_exposition .text_main2{
     padding-top: 0;
     margin-top: 15px;
     font-size: 18px;
+    h2 {
+      font-size: 23px;
+    }
   }
 
   .erwartung, .erwartung_new {
@@ -490,6 +514,7 @@
     font-size: 25px;
   }
 
+
   .main2 {
     padding-bottom: 120px;
     height: auto;
@@ -507,6 +532,14 @@
 
   .main, .main1, .main1_new, .main2 {
     min-height: 1000px;
+  }
+
+  .infos {
+    margin-bottom: 200px;
+  }
+
+  .exponate {
+    padding-bottom: 150px;
   }
 }
 

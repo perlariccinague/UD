@@ -1,0 +1,73 @@
+<?php
+    $chosenNumber = $this->number;
+    $class = '';
+    switch($chosenNumber) {
+        case '1':
+            $class = 'one';
+            break;
+        case '2':
+            $class = 'two';
+            break;
+        case '3':
+            $class = 'three';
+            break;
+        case '4':
+            $class = 'four';
+            break;
+        case '5':
+            $class = 'five';
+            break;
+
+    }
+
+?>
+
+
+<section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
+    <div class="tiles <?= $class ?>">
+       <div class="tile">
+           <div class="tile-image">
+               <a href="<?= $this->url  ?>"><img src="{{file::<?= $this->image ?>}}">
+               </a>
+           </div>
+           <h2><?= $this->name ?></h2>
+           <p><?= $this->text  ?></p>
+       </div>
+        <?php if($this->number > 1): ?>
+           <div class="tile">
+               <div class="tile-image">
+                   <a href="<?= $this->url1  ?>"><img src="{{file::<?= $this->image1 ?>}}"></a>
+               </div>
+               <h2><?= $this->name1 ?></h2>
+               <p><?= $this->text1  ?></p>
+           </div>
+        <?php endif; ?>
+        <?php if($this->number > 2): ?>
+        <div class="tile">
+            <div class="tile-image">
+                <a href="<?= $this->url2  ?>"><img src="{{file::<?= $this->image2 ?>}}"> </a>
+            </div>
+            <h2><?= $this->name2 ?></h2>
+            <p><?= $this->text2  ?></p>
+        </div>
+        <?php endif; ?>
+        <?php if($this->number > 3): ?>
+            <div class="tile">
+                <div class="tile-image">
+                    <a href="<?= $this->url3  ?>"><img src="{{file::<?= $this->image3 ?>}}"></a>
+                </div>
+                <h2><?= $this->name3 ?></h2>
+                <p><?= $this->text3 ?></p>
+            </div>
+        <?php endif; ?>
+        <?php if($this->number > 4): ?>
+            <div class="tile">
+                <div class="tile-image">
+                    <a href="<?= $this->url4  ?>"><img src="{{file::<?= $this->image4 ?>}}"></a>
+                </div>
+                <h2><?= $this->name4 ?></h2>
+                <p><?= $this->text4 ?></p>
+            </div>
+        <?php endif; ?>
+    </div>
+</section>

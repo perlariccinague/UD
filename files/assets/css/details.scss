@@ -1,9 +1,53 @@
 @import "variables";
 
-.exponat, .mod_mae_event_filter {
+.exponat, .mod_mae_event_filter, .tiles {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.tiles {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tiles.one .tile {
+  width: 100%;
+}
+.tiles.two .tile {
+  width: 42%;
+}
+.tiles.three .tile {
+  width: 30%
+}
+.tiles.four .tile{
+  width: 24%;
+}
+.tiles.five .tile{
+  width: 19%;
+}
+
+.tile {
+  h2 {
+    font-size: 26px;
+    color: rgb(38,77,149);
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 2px solid #264d95;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    a {
+      color: $gelb;
+      text-decoration: none;
+    }
+  }
 }
 
 .mod_mae_event_filter {
@@ -109,6 +153,11 @@ tr {
 
   .text_image .text p img,{
     left: 81%;
+  }
+
+  .tiles.one .tile, .tiles.two .tile, .tiles.three .tile,
+  .tiles.four .tile, .tiles.five .tile {
+    width: 100%;
   }
 
 }
