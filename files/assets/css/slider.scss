@@ -1,51 +1,5 @@
 @import "variables";
 
-/*.anfrage_exponate, .anfrage1_exponate, .anfrage2_exponate, .anfrage3_exponate, .exponate_text {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding-top: 55px;
-  text-align: center;
-  .ce_image {
-    .caption {
-      text-align: center;
-      font-size: 15px;
-    }
-  }
-}
-
-.exponate_text {
-  text-align: left;
-}
-
-.anfrage_exponate .slider-control, .anfrage1_exponate .slider-control,
-.anfrage2_exponate .slider-control, .anfrage3_exponate .slider-control {
-  position: absolute;
-  bottom: 100px;
-  transform: translateY(50%);
-  width: 100%;
-  top: 50%;
-}
-
-.slider-control {
-  .slider-prev {
-    left: 3%;
-    img {
-      width: 45px;
-    }
-  }
-  .slider-next {
-    right: 3%;
-    img {
-      width: 45px;
-    }
-  }
-  .slider-menu {
-    display: none;
-  }
-}*/
-
 .slider-control a {
   transition: filter 250ms;
   &:hover {
@@ -54,15 +8,16 @@
 }
 
 .slider_image {
-  transform: translateY(-45%) translateX(-25%);
+  transform: translateY(-200px) translateX(-25%);
   text-align: center;
   width: 200vw;
   background: white;
-  clip-path: polygon(50% 12%, 80% 1%, 80% 20%, 85% 100%, 81% 100%, 54% 100%, 20% 100%, 6% 100%, 10% 10%, 25% 1%);
-  border-radius: 2%/0% 21% 0 0;
-  padding-bottom: 185px;
-  margin-top: -290px;
-  .text_main1 {
+  position: relative;
+  z-index: 9;
+  padding-top: 300px;
+  padding-bottom: 200px;
+  margin-bottom: -200px;
+  .slider-text {
     margin-top: 25px;
   }
   .ce_text {
@@ -131,9 +86,10 @@
 @media screen and (max-width: 1025px) {
   .slider_image {
     border-radius: 0;
-    transform: translateY(0%) translateX(0%);
+    transform: translateY(-200px) translateX(0%);
     width: 100%;
-    clip-path: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
     .ce_text {
       text-align: left;
       font-size: 18px;
@@ -144,7 +100,7 @@
   }
 
   .ce_sliderStart .slider-control {
-    top: 20%;
+    top: 40%;
     .slider-prev img, .slider-next img{
       width: 35px;
     }
@@ -152,5 +108,8 @@
 
   .hoch.ce_sliderStart .slider-control, .breit.ce_sliderStart .slider-control{
     top: 34%;
+  }
+  .breit.ce_sliderStart {
+    width: 90%;
   }
 }

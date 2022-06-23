@@ -61,6 +61,10 @@
 }
 
 @media screen and (max-width: 1025px) {
+  #footer {
+    border-radius: initial;
+  }
+
   .footer_nav {
     width: 34%;
   }

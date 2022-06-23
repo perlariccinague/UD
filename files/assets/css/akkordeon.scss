@@ -16,6 +16,12 @@
   background-position: 97%;
   cursor: pointer;
   text-align: left;
+  outline: none;
+  transition: filter 250ms, background-position ease-out;
+  &:hover {
+    filter: brightness(1.1);
+    background-position: 98%;
+  }
 }
 
 .ce_accordionStart .description {
