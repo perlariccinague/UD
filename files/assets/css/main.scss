@@ -160,7 +160,7 @@
 }
 
 
-.curved, .curved_exposition {
+.curved, .curved_exposition, .curved-datenschutz {
   transform: translateY(-150px) translateX(-25%);
   width: 200vw;
   padding-bottom: 200px;
@@ -206,6 +206,11 @@
 
 .curved_exposition {
   border-radius: 98%/49% 55% 0 0;
+}
+
+.curved-datenschutz {
+  border-radius: 449%/131% 110% 0 0;
+  transform: translateY(-119px) translateX(-25%);
 }
 
 .blue-background {
