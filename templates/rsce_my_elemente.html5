@@ -115,11 +115,9 @@
                         </div>
                     </div>
                     <div class="button">
-                        <a href="{{link_url::51}}">Click & Meet</a>
-
+                        <a href="{{link_url::51}}?id=<?= $this->id; ?>">Click & Meet</a>
                     </div>
                 </div>
-
 
             </div>
 
