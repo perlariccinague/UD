@@ -2,14 +2,14 @@
 .ce_accordionStart  {
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .toggler {
   color: white;
   background-color: #85c3df;
-  border-radius: 10px;
-  padding: 8px 22px;
+  border-radius: 18px;
+  padding: 20px 22px;
   background-size: auto 30px;
   background-image: url("/files/assets/layout/pfeil.svg");
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
   cursor: pointer;
   text-align: left;
   outline: none;
+  font-weight: bold;
   transition: filter 250ms, background-position ease-out;
   &:hover {
     filter: brightness(1.1);
